@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>futbovo scoreboard scottish_prem</title><style>
+:root{--au-bg:#F4F6F5;--au-surface:#FFFFFF;--au-line:#DDE3E1;--au-fg:#10161A;--au-fg-2:#5A666C;
+--au-verdigris:#2E7D6B;--au-oxblood:#B0453F;--au-brass:#8A6E12;
+--au-data:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+--au-body:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif}
+@media (prefers-color-scheme: dark){:root{--au-bg:#0B0F12;--au-surface:#12181D;--au-line:#232C33;
+--au-fg:#E4E8E6;--au-fg-2:#8A959B;--au-verdigris:#4FA98F;--au-oxblood:#C4574F;--au-brass:#C9A227}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--au-bg);color:var(--au-fg);font:15px/1.5 var(--au-body)}
+main{max-width:960px;margin:0 auto;padding:24px 16px}
+h1{font:600 20px/1.3 var(--au-data);margin:0 0 8px}
+.meta{color:var(--au-fg-2);font:13px/1.6 var(--au-data);margin:0 0 16px}
+.chip{display:inline-block;border:1px solid var(--au-line);border-radius:2px;padding:0 6px;
+margin:0 4px 4px 0}
+.note{border-left:3px solid var(--au-brass);padding:4px 10px;margin:0 0 16px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--au-surface);font:13px var(--au-data)}
+th,td{border-bottom:1px solid var(--au-line);padding:6px 8px;text-align:left;white-space:nowrap}
+th{color:var(--au-fg-2);font-weight:500}
+.PLUS_EV,.WIN{color:var(--au-verdigris)}.LOSS{color:var(--au-oxblood)}.PENDING{color:var(--au-brass)}
+footer{color:var(--au-fg-2);font-size:13px;margin-top:24px}
+a{color:var(--au-verdigris)}
+</style></head>
+<body><main>
+<h1>Scoreboard · Scottish Premiership</h1>
+<p class="meta"><a href="index.html">All lanes</a> · <a href="../index.html">Cards</a></p>
+<p class="meta">§9 set of triples carried by the <b>237</b> scored selection rows on the Scottish Premiership (one per decision, from its last pricing run): <span class="chip">n_versions <b>26</b></span><span class="chip">model_version <b>0.120.0 → 0.352.5 (26 versions, 1 unorderable)</b></span><span class="chip">data snapshots <b>28</b></span><span class="chip">sim_seeds <b>1</b></span><br>These are pooled across runs; each card page carries its own single triple.</p>
+<p class="note">Scored: every model pick on the lane graded a win or a loss, as stamped. One observation per decision, from its last pricing run before kickoff where the kickoff is recorded; a decision with no recorded kickoff keeps its last pricing run, unbounded, and each lane page counts those rows. A decision priced only after a recorded kickoff is not scored, and a push or void carries no outcome. The model's verdict decides what is endorsed; placed bets, skips and every other operator judgement are not on this page and enter no figure. Losses and PASS days are listed: no win or loss is filtered out.</p>
+<p class="meta">Calibration is scored once per decision group (one k-outcome vector per match and market) as log-loss −ln p(winner) and Brier Σ(p − o)², lower is better, against the devigged closing market and the ln k ignorance baseline. The gap is model − market, a mean of per-match means; positive means the market was ahead. CLV is closing − entry no-vig probability over endorsed (+EV) decisions; the bar reads the mean per decision, and the t is taken over per-match means so picks sharing one match count once. The bar: at least 100 endorsed decisions over at least 60 matches with mean CLV strictly above +0.0100, and |t| of at least 1.96 over at least 60 matches for a STATISTICAL grade. Below it, a figure is directional, not a verdict. Matches needed is the match count that would give 80% power against an effect the size of the current per-match mean CLV: an order of magnitude, not a date, shown from 10 matches.<br>Regenerated on each publish from the warehouse as it is then; earlier versions are in this repository's git history.</p>
+<p class="meta">0 of the 237 scored selection rows were scored off a pricing that appears on a card in this repository; the rest were stamped before it, or on a run with no card here. 0 decision group(s) were not a complete outcome set and are left out of the proper scores, counted here.</p>
+<h2>Calibration</h2>
+<div class="wrap"><table><thead><tr><th>Lane</th><th>Decision groups</th><th>Matches</th><th>Model log-loss</th><th>Market log-loss</th><th>Baseline ln k</th><th>Model Brier</th><th>Market Brier</th><th>Model − market log-loss</th><th>Grade</th></tr></thead><tbody>
+<tr><td>Scottish Premiership</td><td>79</td><td>79</td><td>1.0100 (n 79)</td><td>1.0085 (n 78)</td><td>1.0986 (n 79)</td><td>0.6050 (n 79)</td><td>0.6038 (n 78)</td><td>+0.0121 (t +0.67, n 78 matches)</td><td>DIRECTIONAL — NOT A VERDICT. At the 60-match bar, but the gap is not significant (|t| below 1.96). Directional, not a verdict.</td></tr>
+</tbody></table></div>
+<h2>Closing-line value</h2>
+<div class="wrap"><table><thead><tr><th>Lane</th><th>Endorsed decisions</th><th>Matches</th><th>Mean CLV per decision</th><th>Mean of match means</th><th>t (match means)</th><th>Beat the close</th><th>Matches needed</th><th>Grade</th></tr></thead><tbody>
+<tr><td>Scottish Premiership</td><td>69</td><td>56</td><td>+0.0034 (n 69)</td><td>+0.0056 (n 56)</td><td>+1.75</td><td>46.4% (n 69)</td><td>144</td><td>DIRECTIONAL — NOT A VERDICT. Below the CLV bar: 69 of 100 endorsed decisions; 56 of 60 matches; mean +0.0034 not above +0.0100.</td></tr>
+</tbody></table></div>
+<p class="note">6 registered pricing-path change(s) lie inside these figures, and every figure above pools both sides. A PRICING change moved the published probabilities, so the scores either side of it come from different model chains; a VERDICT change moved only the EV/verdict path, so the probabilities and their scores are unchanged across it while the picks are not. This page shows the pooled figures only. A side is scoreable on its own at 60 matches.</p>
+<div class="wrap"><table><thead><tr><th>Spec entry</th><th>First release</th><th>Date</th><th>Kind</th><th>Lanes</th><th>Rows / matches before</th><th>Rows / matches after</th><th>Both sides scoreable</th></tr></thead><tbody>
+<tr><td>0.3.22</td><td>0.152.13</td><td>2026-08-10</td><td>VERDICT</td><td>Scottish Premiership, Danish Superliga</td><td>24 / 8</td><td>201 / 67 (+12 unplaceable)</td><td>no</td></tr>
+<tr><td>0.3.23</td><td>0.164.1</td><td>2026-08-12</td><td>VERDICT</td><td>Scottish Premiership, Danish Superliga</td><td>24 / 8</td><td>201 / 67 (+12 unplaceable)</td><td>no</td></tr>
+<tr><td>0.3.26</td><td>0.198.0</td><td>2026-08-26</td><td>PRICING</td><td>Scottish Premiership, Danish Superliga</td><td>27 / 9</td><td>198 / 66 (+12 unplaceable)</td><td>no</td></tr>
+<tr><td>0.3.27</td><td>0.230.0</td><td>2026-09-10</td><td>PRICING</td><td>Scottish Premiership, Danish Superliga</td><td>81 / 27</td><td>144 / 48 (+12 unplaceable)</td><td>no</td></tr>
+<tr><td>0.3.29</td><td>0.309.2</td><td>2026-11-03</td><td>VERDICT</td><td>Scottish Premiership, Danish Superliga</td><td>189 / 63</td><td>36 / 12 (+12 unplaceable)</td><td>no</td></tr>
+<tr><td>0.3.30</td><td>0.312.0</td><td>2026-11-04</td><td>VERDICT</td><td>Scottish Premiership, Danish Superliga</td><td>189 / 63</td><td>36 / 12 (+12 unplaceable)</td><td>no</td></tr>
+</tbody></table></div>
+<p class="meta">12 endorsed decision(s) priced off a board beyond the sizing horizon are excluded from CLV.</p>
+<h2>By day</h2>
+<div class="wrap"><table><thead><tr><th>Day</th><th>Dated by</th><th>Matches</th><th>Decisions</th><th>+EV</th><th>+EV won–lost</th><th>Mean CLV per decision</th><th>Result</th></tr></thead><tbody>
+<tr><td>2026-11-21</td><td>kickoff</td><td>6</td><td>18</td><td>6</td><td>3–3 of 6</td><td>+0.0076 (n 6)</td><td>mixed</td></tr>
+<tr><td>2026-11-08</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>0–2 of 2</td><td>-0.0032 (n 2)</td><td>all lost</td></tr>
+<tr><td>2026-11-07</td><td>kickoff</td><td>4</td><td>12</td><td>2</td><td>1–1 of 2</td><td>— (n 0)</td><td>mixed</td></tr>
+<tr><td>2026-11-01</td><td>kickoff</td><td>1</td><td>3</td><td>2</td><td>1–1 of 2</td><td>-0.0064 (n 2)</td><td>mixed</td></tr>
+<tr><td>2026-10-31</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>1–1 of 2</td><td>+0.0265 (n 2)</td><td>mixed</td></tr>
+<tr><td>2026-10-28</td><td>kickoff</td><td>6</td><td>18</td><td>5</td><td>1–4 of 5</td><td>— (n 0)</td><td>mixed</td></tr>
+<tr><td>2026-10-25</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>0–2 of 2</td><td>-0.0241 (n 2)</td><td>all lost</td></tr>
+<tr><td>2026-10-24</td><td>kickoff</td><td>4</td><td>12</td><td>2</td><td>1–1 of 2</td><td>+0.0120 (n 2)</td><td>mixed</td></tr>
+<tr><td>2026-10-18</td><td>kickoff</td><td>1</td><td>3</td><td>1</td><td>0–1 of 1</td><td>+0.0138 (n 1)</td><td>all lost</td></tr>
+<tr><td>2026-10-17</td><td>kickoff</td><td>5</td><td>15</td><td>5</td><td>3–2 of 5</td><td>-0.0106 (n 5)</td><td>mixed</td></tr>
+<tr><td>2026-10-11</td><td>kickoff</td><td>2</td><td>6</td><td>3</td><td>0–3 of 3</td><td>+0.0005 (n 3)</td><td>all lost</td></tr>
+<tr><td>2026-10-10</td><td>kickoff</td><td>4</td><td>12</td><td>5</td><td>2–3 of 5</td><td>+0.0010 (n 5)</td><td>mixed</td></tr>
+<tr><td>2026-09-20</td><td>kickoff</td><td>1</td><td>3</td><td>1</td><td>0–1 of 1</td><td>-0.0017 (n 1)</td><td>all lost</td></tr>
+<tr><td>2026-09-19</td><td>kickoff</td><td>5</td><td>15</td><td>6</td><td>2–4 of 6</td><td>+0.0090 (n 6)</td><td>mixed</td></tr>
+<tr><td>2026-09-15</td><td>kickoff</td><td>3</td><td>9</td><td>4</td><td>2–2 of 4</td><td>-0.0022 (n 4)</td><td>mixed</td></tr>
+<tr><td>2026-09-06</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>1–1 of 2</td><td>+0.0270 (n 1)</td><td>mixed</td></tr>
+<tr><td>2026-09-05</td><td>kickoff</td><td>4</td><td>12</td><td>6</td><td>1–5 of 6</td><td>-0.0094 (n 6)</td><td>mixed</td></tr>
+<tr><td>2026-09-03</td><td>kickoff</td><td>1</td><td>3</td><td>1</td><td>0–1 of 1</td><td>+0.0463 (n 1)</td><td>all lost</td></tr>
+<tr><td>2026-09-02</td><td>kickoff</td><td>5</td><td>15</td><td>6</td><td>2–4 of 6</td><td>— (n 0)</td><td>mixed</td></tr>
+<tr><td>2026-08-30</td><td>kickoff</td><td>3</td><td>9</td><td>4</td><td>2–2 of 4</td><td>+0.0030 (n 3)</td><td>mixed</td></tr>
+<tr><td>2026-08-29</td><td>kickoff</td><td>3</td><td>9</td><td>3</td><td>1–2 of 3</td><td>+0.0029 (n 3)</td><td>mixed</td></tr>
+<tr><td>2026-08-22</td><td>kickoff</td><td>1</td><td>3</td><td>1</td><td>0–1 of 1</td><td>+0.0534 (n 1)</td><td>all lost</td></tr>
+<tr><td>2026-08-09</td><td>kickoff</td><td>4</td><td>12</td><td>5</td><td>1–4 of 5</td><td>-0.0046 (n 5)</td><td>mixed</td></tr>
+<tr><td>2026-08-08</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>2–0 of 2</td><td>-0.0034 (n 2)</td><td>all won</td></tr>
+<tr><td>2026-08-03</td><td>kickoff</td><td>1</td><td>3</td><td>2</td><td>1–1 of 2</td><td>— (n 0)</td><td>mixed</td></tr>
+<tr><td>2026-08-02</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>0–2 of 2</td><td>+0.0013 (n 2)</td><td>all lost</td></tr>
+<tr><td>2026-08-01</td><td>kickoff</td><td>2</td><td>6</td><td>2</td><td>1–1 of 2</td><td>+0.0532 (n 2)</td><td>mixed</td></tr>
+<tr><td>2026-07-31</td><td>kickoff</td><td>1</td><td>3</td><td>2</td><td>1–1 of 2</td><td>+0.0017 (n 2)</td><td>mixed</td></tr>
+</tbody></table></div>
+<footer>Closing line: devigged from The Odds API · Gamble responsibly · 18+</footer>
+</main></body></html>
