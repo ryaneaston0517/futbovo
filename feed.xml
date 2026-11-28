@@ -2,12 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.futbovo.com/</id>
   <title>futbovo</title>
-  <updated>2026-11-27T17:07:35Z</updated>
+  <updated>2026-11-28T03:22:12Z</updated>
   <author>
     <name>futbovo</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://www.futbovo.com/feed.xml" />
   <link rel="alternate" type="text/html" href="https://www.futbovo.com/" />
+  <entry>
+    <id>https://www.futbovo.com/cards/2026-11-27-evening-154832154298741.html</id>
+    <title>Card 2026-11-27 · evening · EFL Championship</title>
+    <published>2026-11-28T03:22:12Z</published>
+    <updated>2026-11-28T03:22:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://www.futbovo.com/cards/2026-11-27-evening-154832154298741.html" />
+    <summary>9 pick(s), 5 +EV. Priced 2026-11-28T03:22:04Z.</summary>
+    <content type="html">&lt;h1&gt;Card · 2026-11-27 · evening&lt;/h1&gt;
+&lt;p class="meta"&gt;EFL Championship&lt;br&gt;Priced 2026-11-28 03:22Z · published 2026-11-28 03:22Z · run 154832154298741&lt;br&gt;&lt;span class="chip"&gt;data_snapshot_id snapshot-71774e5cc7be&lt;/span&gt;&lt;span class="chip"&gt;model_version 0.372.0&lt;/span&gt;&lt;span class="chip"&gt;sim_seed 20260601&lt;/span&gt;&lt;/p&gt;
+&lt;p class="meta"&gt;Market is the no-vig probability of the prices judged.&lt;/p&gt;
+&lt;div class="wrap"&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Fixture&lt;/th&gt;&lt;th&gt;Kickoff&lt;/th&gt;&lt;th&gt;Pick&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;th&gt;Model&lt;/th&gt;&lt;th&gt;Market&lt;/th&gt;&lt;th&gt;Fair&lt;/th&gt;&lt;th&gt;EV&lt;/th&gt;&lt;th&gt;Verdict&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Preston North End vs Norwich City&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Norwich City&lt;/td&gt;&lt;td&gt;-130 betmgm&lt;/td&gt;&lt;td&gt;39.7%&lt;/td&gt;&lt;td&gt;53.7%&lt;/td&gt;&lt;td&gt;2.52&lt;/td&gt;&lt;td&gt;-29.8%&lt;/td&gt;&lt;td&gt;&lt;span class="MINUS_EV"&gt;−EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Preston North End vs Norwich City&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Draw&lt;/td&gt;&lt;td&gt;+300 betmgm&lt;/td&gt;&lt;td&gt;27.7%&lt;/td&gt;&lt;td&gt;23.7%&lt;/td&gt;&lt;td&gt;3.61&lt;/td&gt;&lt;td&gt;+10.7%&lt;/td&gt;&lt;td&gt;&lt;span class="PLUS_EV"&gt;+EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Preston North End vs Norwich City&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Preston North End&lt;/td&gt;&lt;td&gt;+320 betmgm&lt;/td&gt;&lt;td&gt;32.6%&lt;/td&gt;&lt;td&gt;22.6%&lt;/td&gt;&lt;td&gt;3.06&lt;/td&gt;&lt;td&gt;+37.1%&lt;/td&gt;&lt;td&gt;&lt;span class="PLUS_EV"&gt;+EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Lincoln City vs Wolverhampton Wanderers&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Draw&lt;/td&gt;&lt;td&gt;+300 betmgm&lt;/td&gt;&lt;td&gt;26.0%&lt;/td&gt;&lt;td&gt;23.7%&lt;/td&gt;&lt;td&gt;3.84&lt;/td&gt;&lt;td&gt;+4.1%&lt;/td&gt;&lt;td&gt;&lt;span class="PLUS_EV"&gt;+EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Lincoln City vs Wolverhampton Wanderers&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Wolverhampton Wanderers&lt;/td&gt;&lt;td&gt;-175 betmgm&lt;/td&gt;&lt;td&gt;52.1%&lt;/td&gt;&lt;td&gt;60.4%&lt;/td&gt;&lt;td&gt;1.92&lt;/td&gt;&lt;td&gt;-18.2%&lt;/td&gt;&lt;td&gt;&lt;span class="MINUS_EV"&gt;−EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Lincoln City vs Wolverhampton Wanderers&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Lincoln City&lt;/td&gt;&lt;td&gt;+500 betmgm&lt;/td&gt;&lt;td&gt;21.9%&lt;/td&gt;&lt;td&gt;15.8%&lt;/td&gt;&lt;td&gt;4.57&lt;/td&gt;&lt;td&gt;+31.2%&lt;/td&gt;&lt;td&gt;&lt;span class="PLUS_EV"&gt;+EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Blackburn Rovers vs Charlton Athletic&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Blackburn Rovers&lt;/td&gt;&lt;td&gt;+100 betmgm&lt;/td&gt;&lt;td&gt;57.6%&lt;/td&gt;&lt;td&gt;47.0%&lt;/td&gt;&lt;td&gt;1.73&lt;/td&gt;&lt;td&gt;+15.3%&lt;/td&gt;&lt;td&gt;&lt;span class="PLUS_EV"&gt;+EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Blackburn Rovers vs Charlton Athletic&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Charlton Athletic&lt;/td&gt;&lt;td&gt;+260 betmgm&lt;/td&gt;&lt;td&gt;17.7%&lt;/td&gt;&lt;td&gt;26.1%&lt;/td&gt;&lt;td&gt;5.65&lt;/td&gt;&lt;td&gt;-36.3%&lt;/td&gt;&lt;td&gt;&lt;span class="MINUS_EV"&gt;−EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Blackburn Rovers vs Charlton Athletic&lt;/td&gt;&lt;td&gt;2026-11-28 12:30Z&lt;/td&gt;&lt;td&gt;moneyline · Draw&lt;/td&gt;&lt;td&gt;+250 betmgm&lt;/td&gt;&lt;td&gt;24.7%&lt;/td&gt;&lt;td&gt;26.9%&lt;/td&gt;&lt;td&gt;4.05&lt;/td&gt;&lt;td&gt;-13.7%&lt;/td&gt;&lt;td&gt;&lt;span class="MINUS_EV"&gt;−EV&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;footer&gt;Gamble responsibly · 18+&lt;/footer&gt;</content>
+  </entry>
   <entry>
     <id>https://www.futbovo.com/cards/2026-11-27-day-33106107860264.html</id>
     <title>Card 2026-11-27 · day · Danish Superliga, EFL Championship, Scottish Premiership</title>
